@@ -9,6 +9,6 @@ def get_choices():
     return choices
 choices = get_choices()
 print(choices)
-if
+ #
 
 
