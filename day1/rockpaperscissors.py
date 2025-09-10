@@ -8,23 +8,17 @@ def get_choices():
 
 def check_win(player, computer):
     print(f"You chose {player}, computer chose {computer}")
+    win_conditions = {
+        "rock": "scissors",
+        "paper": "rock",
+        "scissors": "paper"
+    }
     if player == computer:
-        return "It's a tie!" 
-    elif player == "rock":
-        if computer == "scissors":
-            return "Rock > scissors! Win"
-        else:
-            return "Paper covers rock! You lose"
-    elif player == "paper":
-        if computer == "rock":
-            return "Paper > rock! win"
-        else:
-            return "scissors cuts paper! You lose"
-    elif player == "scissors":
-        if computer == "paper":
-            return "scissors > paper! win"
-        else:
-            return "Rock smashes scissors! You lose"
+        return "It's a tie!"
+    elif win_conditions[player] == computer:
+        return f"{player.capitalize()} > {computer}! Win"
+    else:
+        return f"{computer.capitalize()} > {player}! You lose"
 
 choices = get_choices()
 result = check_win(choices["player"], choices["computer"])
