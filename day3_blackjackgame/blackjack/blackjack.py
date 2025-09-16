@@ -23,10 +23,15 @@ class Hand:
         return self.value
     def is_blackjack(self):
         return self.value == 21
-    def display(self):
+    def display(self, show_all_dealer_cards=False):
         print(f'''{"Dealer's" if self.dealer else "Your"} hand''')
-        for card in self.cards:
-            print(card)
+        for index, card in enumerate(self.cards):
+            if index == 0 and self.dealer \
+                    and not show_all_dealer_cards \
+                    and not self.is_blackjack():
+                print("Hidden")
+            else:
+                print(card)
 
         if not self.dealer:
             print("Value:", self.get_value())
@@ -73,13 +78,54 @@ class Deck:
         return cards_dealt
 
 
+class Game:
+    def play(self):
+        game_number = 0
+        games_to_play = 0
+
+        while game_number <= 0:
+            try:
+                game_to_play = int(input("How many games do you want to play : ").lower())
+            except:
+                print("Invalid input")
+        while game_number <= games_to_play:
+            game_number += 1
+
+            deck = Deck()
+            deck.shuffle()
+
+            player_hand = Hand()
+            dealer_hand = Hand(dealer=True)
+
+        for x in range(2):
+            player_hand.add_card(deck.deal(1))
+            dealer_hand.add_card(deck.deal(1))
+        print()
+        print("*" * 30)
+
+        print(f"Game {game_number} of {games_to_play}")
+        player_hand.display()
+        dealer_hand.display()
+    def check_win(self, player_hand, dealer_hand, game_over=False):
+        if player_hand.get_value() > 21:
+            print("You went over. You lose!")
+            return True
+        elif dealer_hand.get_value() > 21:
+            print("Dealer went over. You win!")
+            return True
+        elif player_hand.is_blackjack() == dealer_hand.is_blackjack():
+            print("It's a tie!")
+            return True
+        elif player_hand.is_blackjack():
+            print("Blackjack! You win!")
+            return True
+        elif dealer_hand.is_blackjack():
+            print("Dealer has Blackjack. You lose!")
+            return True
+        return False
 
 
 
-deck = Deck()
-deck.shuffle()
 
-hand = Hand()
-hand.add_card(deck.deal(2))
-
-print(hand.display())
+g = Game()
+g.play()
