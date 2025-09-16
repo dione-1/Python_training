@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27c41529-d5d1-4a2d-b048-085a259030e4" name="Changes" comment="Refactor blackjack script: add `Hand`, `Card`, and `Deck` classes to encapsulate logic, streamline card dealing, and improve code readability.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="27c41529-d5d1-4a2d-b048-085a259030e4" name="Changes" comment="Add `Game` class and enhance gameplay logic&#10;&#10;Refined the Blackjack logic by introducing a `Game` class to manage overall gameplay. Improved the `Hand` display to include an option for showing hidden dealer cards, added win-checking methods, and streamlined dealing mechanics for better readability and functionality.">
       <change beforePath="$PROJECT_DIR$/day3_blackjackgame/blackjack/blackjack.py" beforeDir="false" afterPath="$PROJECT_DIR$/day3_blackjackgame/blackjack/blackjack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
   }
 }]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="AISelfReview" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -124,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758032671045</updated>
       <workItem from="1758032684041" duration="534000" />
-      <workItem from="1758033218864" duration="9862000" />
+      <workItem from="1758033218864" duration="12546000" />
     </task>
     <task id="LOCAL-00001" summary="Remove outdated files and add new project setup&#10;&#10;Deleted old Python practice files and README to clean up the repository. Added IntelliJ IDEA project files and a new Blackjack script to the main folder. This commit sets up the foundation for a more organized development environment.">
       <option name="closed" value="true" />
@@ -182,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758041395886</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add `Game` class and enhance gameplay logic&#10;&#10;Refined the Blackjack logic by introducing a `Game` class to manage overall gameplay. Improved the `Hand` display to include an option for showing hidden dealer cards, added win-checking methods, and streamlined dealing mechanics for better readability and functionality.">
+      <option name="closed" value="true" />
+      <created>1758045588034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758045588034</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,9 +243,10 @@
     <MESSAGE value="Add card values and improve blackjack dealing logic&#10;&#10;Refactored `blackjack.py` to include structured rank-value pairs for cards, replacing manual value assignment. Updated card dealing logic to streamline operations and enhance clarity. Expanded README with detailed goals, learning roadmap, and project progress." />
     <MESSAGE value="modified README.md" />
     <MESSAGE value="Refactor blackjack script: add `Hand`, `Card`, and `Deck` classes to encapsulate logic, streamline card dealing, and improve code readability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor blackjack script: add `Hand`, `Card`, and `Deck` classes to encapsulate logic, streamline card dealing, and improve code readability." />
+    <MESSAGE value="Add `Game` class and enhance gameplay logic&#10;&#10;Refined the Blackjack logic by introducing a `Game` class to manage overall gameplay. Improved the `Hand` display to include an option for showing hidden dealer cards, added win-checking methods, and streamlined dealing mechanics for better readability and functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `Game` class and enhance gameplay logic&#10;&#10;Refined the Blackjack logic by introducing a `Game` class to manage overall gameplay. Improved the `Hand` display to include an option for showing hidden dealer cards, added win-checking methods, and streamlined dealing mechanics for better readability and functionality." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_l$blackjack.coverage" NAME="blackjack Coverage Results" MODIFIED="1758044992359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3_blackjackgame/blackjack" />
+    <SUITE FILE_PATH="coverage/python_l$blackjack.coverage" NAME="blackjack Coverage Results" MODIFIED="1758048086637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3_blackjackgame/blackjack" />
   </component>
 </project>
