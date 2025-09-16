@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27c41529-d5d1-4a2d-b048-085a259030e4" name="Changes" comment="refactor: rename directories for better organization">
+    <list default="true" id="27c41529-d5d1-4a2d-b048-085a259030e4" name="Changes" comment="modified README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day3_blackjackgame/blackjack/blackjack.py" beforeDir="false" afterPath="$PROJECT_DIR$/day3_blackjackgame/blackjack/blackjack.py" afterDir="false" />
     </list>
@@ -41,6 +41,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -67,6 +68,9 @@
   <component name="LLMProjectSettings">
     <option name="turned_on" value="false" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -79,7 +83,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.blackjack.executor": "Debug",
+    "Python.blackjack.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -90,7 +94,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "settings.editor.selected.configurable": "configurable.group.python.group.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758032671045</updated>
       <workItem from="1758032684041" duration="534000" />
-      <workItem from="1758033218864" duration="1555000" />
+      <workItem from="1758033218864" duration="7324000" />
     </task>
     <task id="LOCAL-00001" summary="Remove outdated files and add new project setup&#10;&#10;Deleted old Python practice files and README to clean up the repository. Added IntelliJ IDEA project files and a new Blackjack script to the main folder. This commit sets up the foundation for a more organized development environment.">
       <option name="closed" value="true" />
@@ -157,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758033393796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add initial blackjack card deck and dealing logic">
+      <option name="closed" value="true" />
+      <created>1758034791154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758034791154</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modified README.md">
+      <option name="closed" value="true" />
+      <created>1758035779189</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758035779189</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,9 +226,13 @@
     <MESSAGE value="Refactor directory structure for blackjack script.&#10;&#10;Moved `blackjack.py` from `main/day3` to `day3` to simplify the folder hierarchy and improve organization. No functional changes were made to the script." />
     <MESSAGE value="add IntelliJ IDEA project configuration files" />
     <MESSAGE value="refactor: rename directories for better organization" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename directories for better organization" />
+    <MESSAGE value="add initial blackjack card deck and dealing logic" />
+    <MESSAGE value="Refactor directory structure for blackjack script.&#10;&#10;Moved `blackjack.py` from `main/day3` to `day3` to simplify the folder hierarchy and improve organization. No functional changes were made to the script.&#10;add initial blackjack card deck and dealing logic" />
+    <MESSAGE value="Add card values and improve blackjack dealing logic&#10;&#10;Refactored `blackjack.py` to include structured rank-value pairs for cards, replacing manual value assignment. Updated card dealing logic to streamline operations and enhance clarity. Expanded README with detailed goals, learning roadmap, and project progress." />
+    <MESSAGE value="modified README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_l$blackjack.coverage" NAME="blackjack Coverage Results" MODIFIED="1758034754661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3_blackjackgame/blackjack" />
+    <SUITE FILE_PATH="coverage/python_l$blackjack.coverage" NAME="blackjack Coverage Results" MODIFIED="1758041345777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3_blackjackgame/blackjack" />
   </component>
 </project>
